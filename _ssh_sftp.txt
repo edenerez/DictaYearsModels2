@@ -1,0 +1,85 @@
+"""
+
+# how many files in directory
+ls -1 | wc -l
+
+# HD memory
+df -h
+
+sudo -i
+cd /home/ubunto/
+
+cd C:\Users\User\Downloads
+cd C:\Users\User\source\repos\WebProjectPython\Koppel
+cd C:\\Users\\User\\source\\repos\\PythonApplication1\\PythonApplication1\\
+
+ssh -i externaluseast2key.pem ubuntu@3.133.34.80
+sftp -i externaluseast2key.pem ubuntu@3.133.34.80
+    get/put
+put C:/Users/User/source/repos/WebProjectPython/Koppel/ResponsaRedividedByMR/* ./data/
+put "C:\\Users\\User\\source\\repos\\WebProjectPython\\Koppel\\data\\FullR25_Responsa_DatesForTheCorpus_pshut_dates_wip.csv" ./
+put C:/Users/User/source/repos/WebProjectPython/Koppel/code/* ./code/
+put C:/Users/User/source/repos/WebProjectPython/Koppel/code/parameters.py ./code/
+put C:/Users/User/source/repos/WebProjectPython/Koppel/data/chunks_ints_200/* ./chunks_ints_200/
+
+put C:/Users/User/source/repos/WebProjectPython/Koppel/code/d3_train_model.py ./code/
+
+get /home/ubuntu/newvolume/vocabulary/gensim_word2vec_3_102.bin C:/Users/User/source/repos/WebProjectPython/Koppel/data//vocabulary/
+get /home/ubuntu/newvolume/vocabulary/gensim_word2vec_3_100.bin.syn1neg.npy C:/Users/User/source/repos/WebProjectPython/Koppel/data//vocabulary/
+get /home/ubuntu/newvolume/vocabulary/gensim_word2vec_3_100.bin.wv.vectors.npy C:/Users/User/source/repos/WebProjectPython/Koppel/data//vocabulary/
+
+get /home/ubuntu/newvolume/chunks_ints_200/* C:/Users/User/source/repos/PythonApplication1/PythonApplication1/data_3.7/chunks_ints_200/
+
+get /home/ubuntu/newvolume/vocabulary/model_number_0_model_-587.mdl C:/Users/User/source/repos/WebProjectPython/Koppel/data//vocabulary/
+get /home/ubuntu/newvolume/vocabulary/model_number_0_X_test_-587.mdl C:/Users/User/source/repos/WebProjectPython/Koppel/data//vocabulary/
+get /home/ubuntu/newvolume/vocabulary/model_number_0_y_test_-587.mdl C:/Users/User/source/repos/WebProjectPython/Koppel/data//vocabulary/
+
+get /home/ubuntu/newvolume/vocabulary/models/* E:\\Dicta\\distance_25\\
+
+cd code
+python3 a_dictionary_uniqe_words.py
+
+
+# to define HD named newvolume
+cd ~
+sudo mount /dev/nvme1n1 /home/ubuntu/newvolume
+
+
+nohup python3 d3_train_model.py  &
+
+# processes
+ps -aux | grep python3
+
+pip3 install gensim==3.8.3
+pip3 install gensim==4.1.2
+
+"""
+Java version 3.7
+
+gensim==4.1.2
+Keras==2.3.1
+numpy==1.19.5(current version) -> 1.16.4 (FutureWarning)
+pandas==1.0.3
+scikit-learn==0.23.2
+tensorflow==1.14.0
+h5py == 3.6.0 -> 2.10.0 (current version)
+
+
+transformers
+pandas
+torch
+tensorflow
+
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64
+cd C:\Users\User\source\repos\PythonApplication1\PythonApplication1
+"C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\python" d32_train_model_distance_25.py
+"C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\python" d32_b
+pad_sequences return np.asarray(self.array, dtype)
+ValueError: setting an array element with a sequence.
+
+
+https://www.google.com/search?q=pad_sequences+return+np.asarray(self.array%2C+dtype)+ValueError%3A+setting+an+array+element+with+a+sequence.&oq=pad_sequences+return+np.asarray(self.array%2C+dtype)+ValueError%3A+setting+an+array+element+with+a+sequence.&aqs=chrome..69i57.6490j0j7&sourceid=chrome&ie=UTF-8
+
+
